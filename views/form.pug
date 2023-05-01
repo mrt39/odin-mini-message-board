@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 New Message
+    form(action="/new", method="post") 
+        input(type="text", name="messageInput")
+        br
+        input(type="text", name="userInput")
+        br  
+        br
+        input(type="submit", value="Submit")
+    
+

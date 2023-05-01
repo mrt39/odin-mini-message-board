@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Welcome to mini message board!
+  ul
+  each val in messagesArray
+    li= p= "Text: " +  val.text
+      p= "User: " +  val.user
+      p= "Added: " +  val.added
+
+      
